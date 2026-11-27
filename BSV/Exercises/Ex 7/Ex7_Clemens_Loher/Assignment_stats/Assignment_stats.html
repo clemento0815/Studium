@@ -1,0 +1,165 @@
+<!DOCTYPE html> <html>
+
+  <head> <meta charset="utf-8"> <title>BSV3-Stats</title> <meta name="viewport"
+    content="width=device-width, initial-scale=1"> <link rel="manifest"
+      href="site.webmanifest"> <link rel="icon" href="Resources/img/bsa.png">
+
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens
+-->
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower">
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Resources/css/style.css">
+
+    <!-- For equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
+
+  <body> <svg display="none" width="0" height="0" version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"> <defs> <symbol id="right-arrow"
+      viewBox="0 0 39 10"> <path d="M29.507 5.418L.501 5.141l.01-1
+        29.006.277.038-4 8.956 4.586-9.042 4.414.038-4z" fill-rule="nonzero" />
+    </symbol> <symbol id="left-arrow" viewBox="0 0 39 10"> <path d="M9.51
+        4.227l29.006.277-.01 1-29.005-.277-.038 4L.506 4.641 9.549.227l-.039
+        4z" fill-rule="nonzero" /> </symbol> <symbol id="video" viewBox="0 35
+        128 56"> <rect x="21.694" y="40.412" width="63.593" height="46.781"
+          rx="7.282" ry="10.964" stroke="black" stroke-width="4" fill="none"/>
+        <polygon points="106.485,42.605 85.287,56.493 85.287,71.843
+          106.485,87.924 " stroke="black" stroke-width="4" fill="none"/>
+        <polygon points="47.615,51.255 57.216,57.738 66.817,64.221
+          56.776,69.315 46.736,74.408 47.175,62.832 " stroke="black"
+          stroke-width="4" fill="none"/> </symbol> </defs> </svg>
+
+    <div class="PageWrapper"> <div class="topnav" id="myTopnav">
+
+      <a href="/" id="BSA_logo" class="FirstLink"><img
+        src="Resources/img/bsa.png" alt="Overview" width="50px" /></a> <a
+        href="Assignment_stats.zip" class="nav-Link">Zipped</a> <a
+        href="Assignment_stats.pdf" class="nav-Link">PDF</a> <a
+        href="https://work.thaslwanter.at/py_intro" class="nav-Link">Py7</a> <a
+        href="https://elearning.fh-ooe.at/mod/url/view.php?id=324755"
+        class="nav-Link">SAPy</a> <a href="javascript:void(0);" class="icon"
+        onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+
+    </div> <div class="FlexWrapper"> <div class="Background"> <h1
+        class="MainHeader"> Assignment 7: Statistics</h1>
+
+        <dev class="ruler"> <hr> </dev> </div>
+
+        <div class="Contents">
+
+          <div class="ExBackground"> <h3> First steps </h3> <ul> <li>A number
+            of different <em>random number generation algorithms </em>exist,
+            which can be used to generate random numbers.</li> <li>Those
+              algorithms all start from a <em>seed value</em>, which can be
+              set.</li> <li> Initialize your random number generator such that
+              it starts from the seed value <em>12345</em>, with <code>rng =
+                np.random.default_rng(12345)</code> .  This ensures repeatable
+              "random" numbers. </li>
+          </ul>
+          </div>
+
+          <!-- Exercise 1 -->
+          <h2>Hip Implants</h2>
+          <p>Your doctor tells you that he can use hip implants for surgery even if they are
+          1 mm bigger or smaller than the specified size. And your financial
+          officer tells you that you can discard 1 out of 1000 hip implants,
+          and still make a profit. </p>
+          <ul>
+          <li>What is the required standard deviation for the producer of the hip
+          implants, to simultaneously satisfy both requirements? </li>
+          </ul>
+
+          <!-- Exercise 2 -->
+          <h2>Random numbers</h2>
+          <ul>
+            <li>Using a <em>random number generator (see above)</em>, generate 1000
+            data from a normal distribution with a mean of 175, and a standard deviation
+            of 12.5.</li>
+            <li>Look at the histogram and the boxplot of these data.</li>
+            <li>Generate a 3x2 matrix of integers between 0 and 9.</li>
+            <li>Generate a 3x2 matrix of <em>different</em> integers.</li>
+            <li>Generate <em>the same data set as the first time</em> again.</li> 
+          </ul>
+
+          <!-- Exercise 3 -->
+          <h2>Compare Two Groups</h2>
+          <p>In an experiment, you have recorded the height of two groups of
+            subjects. Now you want to find out if the two groups are equal or not.</p>
+          <ul>
+            <li>Read in the data from <code>data_to_compare.txt</code>.</li>
+            <li>Plot the two data groups, and try to judge visually if they are
+              the same or different.</li>
+            <li>Perform an <em>unpaired</em> T-test, and do a numerical
+              comparison. Write the result to the TXT-file <code>differences.txt</code>. </li>
+          </ul>
+
+          <div class='Legacy'>
+            <h2>Voluntary</h2>
+            <!-- Legacy: Exercise 1 -->
+            <h3 class="SubHeader">Analyze data</h3> <div
+              class="ExSpecification"> <p>Let us assume that the weight of 100
+                random, 15 year old children in Tirol and in Vienna are: </p>
+              <pre> num_subjects = 100 tirol  = rng.normal(loc=60, scale=8,
+                size=num_subjects) vienna = rng.normal(loc=55, scale=10,
+                size=num_subjects) </pre> <p>Then the Viennese children try out
+                a chocolate-diet: for one week, they eat only chocolate for
+                breakfast, and otherwise their normal food. After one week
+                these 100 children weigh</p> <pre>	vienna_after = vienna +
+                rng.normal(loc=0.25, scale=1.0, size=num_subjects) </pre> <ul>
+                <li>Calculate mean, median, standard deviation (SD), and
+                  standard error for the first 10 Tyrolian children.</li>
+                <li>Calculate mean, median, standard deviation (SD), and
+                  standard error for all Tyrolian children.</li> </ul> </div>
+
+            <!-- Legacy: Exercise 2 -->
+            <h3 class="SubHeader">Plot data</h3> <ul> <li>Plot mean +/- SD ,
+              and mean +/- SE for both the Tyrolian and the Viennese
+              children.</li> <li>Based on these plots, can you tell if the two
+                groups are different? (See also Exercise 4).</li> </ul>
+
+
+            <!-- Legacy: Exercise 3 -->
+            <h3 class="SubHeader">Boxplots</h3> <ul> <li>Plot boxplots of the
+              Tyrolian and the Viennese children. What does the boxplot tell
+              us?</li> <li>Plot a boxplot from 1000 samples from a normal
+                distribution, with a mean of 85, and a standard deviation of
+                12. How are the outliers defined?</li> </ul>
+
+
+            <!-- Legacy: Exercise 4 -->
+            <h3 class="SubHeader">Compare groups</h3> <p>In Python statistical
+              comparisons between groups can be performed using either
+              functions from <code>scipy.stats</code>, or from the statistics
+              package <a
+                href="https://pingouin-stats.org">https://pingouin-stats.org</a>.
+              The latter one used pandas DataFrames and Series for the results.
+              This takes a bit of getting used to, but results in much clearer
+              code.</p> <ul> <li>Find out if the difference between the
+              children in Tirol and the children in Vienna is significant.</li>
+              <li>Find out if the weight of the Viennese children after the
+                chocolate-diet is more than the weight before the diet. Note
+                that these data are from the same children as before the diet,
+                in the same order.</li> <li>Re-generate the simulated data
+                after the diet, and repeat the test.</li> </ul>
+
+          </div>
+        </div>
+        <div class="Footer"> <address> Written by Thomas
+          Haslwanter at fh-ooe.at<br> WS 2025/26 </address>
+        </div>
+      </div>
+    </div>
+    <!-- Script to toggle between adding and removing the "responsive" class to
+topnav
+when the user clicks on the icon --> <script
+    src="Resources/js/topnav.js"></script>
+
+  </body>
+
+</html>

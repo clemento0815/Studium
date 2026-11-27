@@ -101,4 +101,5 @@ for ax in axs:
     ax.margins(x=0)
 
 plt.tight_layout()
+
 plt.show()
