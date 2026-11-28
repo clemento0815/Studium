@@ -1,0 +1,4 @@
+Body weight: 755.0 +/- 3.1 N
+Body mass: 77.0 kg
+Flight time: 0.450 s
+Jump height: 24.8 cm

@@ -57,7 +57,7 @@
 % Es wurde ein Hypervisor erkannt. Features, die für Hyper-V erforderlich sind, werden nicht angezeigt.	
 
 
-% Programmieren der Temperaturkennlinie von PTC und NTC Thermistoren
+%% Programmieren der Temperaturkennlinie von PTC und NTC Thermistoren
 
 clc
 clear

@@ -1,0 +1,4 @@
+Number of data points: 400
+Mean of last 150 points: [134.9/-94.0/1073.2] mm
+Min of last 150 points:  [-27.6/-197.9/1036.7] mm
+Max of last 150 points:  [341.6/53.2/1108.2] mm

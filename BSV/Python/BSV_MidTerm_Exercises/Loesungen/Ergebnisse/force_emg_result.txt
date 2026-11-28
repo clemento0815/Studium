@@ -1,0 +1,5 @@
+Samples above 200 N: 796
+Total time above threshold: 1.59 s
+Force first exceeds threshold at t = 0.962 s
+Mean EMG (active / rest): 0.3792 / 0.0438 mV
+Ratio active/rest: 8.7

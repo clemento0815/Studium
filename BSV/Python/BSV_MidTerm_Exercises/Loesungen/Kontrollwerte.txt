@@ -1,0 +1,30 @@
+Kontrollwerte zu den Uebungsaufgaben
+====================================
+
+Aufgabe 1 (Kniewinkel):
+Maximum angular velocity: 176.6 deg/s at t = 7.04 s
+
+Aufgabe 2 (Marker):
+Number of data points: 400
+Mean of last 150 points: [134.9/-94.0/1073.2] mm
+Min of last 150 points:  [-27.6/-197.9/1036.7] mm
+Max of last 150 points:  [341.6/53.2/1108.2] mm
+
+Aufgabe 3 (Kraft/EMG):
+Samples above 200 N: 796
+Total time above threshold: 1.59 s
+Force first exceeds threshold at t = 0.962 s
+Mean EMG (active / rest): 0.3792 / 0.0438 mV
+Ratio active/rest: 8.7
+
+Aufgabe 4 (Sprung):
+Body weight: 755.0 +/- 3.1 N
+Body mass: 77.0 kg
+Flight time: 0.450 s
+Jump height: 24.8 cm
+
+Hinweis: Kleine Abweichungen in der letzten Stelle koennen je nach
+Rechenweg (z. B. Flugzeit ueber Anzahl Samples oder Zeitdifferenz)
+vorkommen. Die Abbildungen der Musterloesung liegen im Ordner Ergebnisse.
+Fuer Aufgabe 4 die Datei A4_jump_functions.py in jump_functions.py
+umbenennen bzw. den Import anpassen, falls du sie nachbaust.

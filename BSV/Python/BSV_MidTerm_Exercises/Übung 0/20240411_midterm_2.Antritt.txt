@@ -1,0 +1,34 @@
+Aufgabe: Powerspektrum 
+=======================
+
+Die Datei "swinging.mat" enthält ein verrauschtes Messsignal, welches mit
+100 Hz aufgenommen wurde.
+Schreiben Sie ein Skript(!), welches folgende Aufgaben durchführt:
+
+    - Daten einlesen.
+    - Signaldauer bestimmen und anzeigen.
+    - Fourier-Transformation ausrechnen.
+    - Powerspektrum ausrechnen.
+    - Position des Maximums im Powerspektrum finden (Kann im
+      Notfall auch manuell erfolgen).
+    - Frequenz, Amplitude, und Phase der entsprechenden (maximalen) Fourier-
+      komponente wie folgt anzeigen:
+
+      "[xx.xx] Hz: Amp = [yy.yy]; Phase = [zz.zz] deg."
+
+
+Notfall A
+---------
+Sollten Sie nicht wissen, wie Sie vom Punkt im Powerspektrum auf die
+Frequenz kommen, so schreiben Sie:
+"Position [ddd]: Amp = [yy.yy]; Phase = [zz.zz] deg."
+
+
+Notfall B
+---------
+Sollten Sie Amplitude/Phase nicht bestimmen können, so schreiben Sie
+das Ergebnis mit folgenden Werten heraus:
+  xx.xx = 11.1
+  yy.yy = 22.22
+  zz.zz = 33.333
+
